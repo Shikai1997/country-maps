@@ -1,0 +1,54 @@
+.card {
+  display: inline-block;
+  width: 23%;
+  height: 100%;
+  margin-bottom: 2rem;
+  border: 1px solid #646464;
+  border-radius: .5rem;
+  overflow: hidden; }
+  .card:hover {
+    border: 1px solid #a3d1c6; }
+    .card:hover .header {
+      background-color: #a3d1c6;
+      border-bottom: 1px solid #a3d1c6; }
+  .card .header {
+    padding: 1rem;
+    background-color: #ececec;
+    border-bottom: 1px solid #646464;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .card .header h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: .5rem; }
+    .card .header h4 {
+      font-size: 1.2rem;
+      font-weight: 400; }
+    .card .header .logo {
+      width: 9rem;
+      height: 6rem;
+      background-color: #fff; }
+  .card .content {
+    font-size: 1.4rem; }
+    .card .content li {
+      padding: 1rem;
+      line-height: 1.5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .card .content li:not(:last-child) {
+        border-bottom: 1px solid #646464; }
+    .card .content__title {
+      display: inline-block;
+      width: 40%; }
+    .card .content__value {
+      display: inline-block;
+      width: 50%;
+      text-align: center; }
+    .card .content .altSpellings li {
+      padding: 0;
+      border: none;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center; }

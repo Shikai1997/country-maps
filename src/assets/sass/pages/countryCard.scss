@@ -1,0 +1,68 @@
+@import "../base/variable.scss";
+.card {
+    display: inline-block;
+    @include boxSize(23%, 100%);
+    margin-bottom: 2rem;
+    border: 1px solid #646464;
+    border-radius: .5rem;
+    overflow: hidden;
+    &:hover {
+        border: 1px solid rgb(163, 209, 198);
+        .header {
+            background-color: rgb(163, 209, 198);
+            border-bottom: 1px solid rgb(163, 209, 198);
+        }
+    }
+    .header {
+        padding: 1rem;
+        background-color: #ececec;
+        border-bottom: 1px solid #646464;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+            font-size: $card-title;
+            font-weight: 700;
+            margin-bottom: .5rem;
+        }
+        h4 {
+            font-size: $title-s;
+            font-weight: 400;
+        }
+        .logo {
+            @include boxSize(9rem, 6rem);
+            background-color: #fff;
+        }
+    }
+    .content {
+        font-size: $card-title-s;
+        li {
+            padding: 1rem;
+            line-height: 1.5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &:not(:last-child) {
+                border-bottom: 1px solid #646464;
+            }
+        }
+        &__title {
+            display: inline-block;
+            width: 40%;
+        }
+        &__value {
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+        }
+        .altSpellings {
+            li {
+                padding: 0;
+                border: none;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

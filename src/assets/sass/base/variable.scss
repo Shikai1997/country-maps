@@ -1,0 +1,11 @@
+$title-l: 2.2rem;
+$title-m: 1.8rem;
+$title-s: 1.2rem;
+$card-title: 2rem;
+$card-title-s: 1.4rem;
+$title-color: #777;
+$paragraph-color: #3c3c3c;
+@mixin boxSize($ww, $hh) {
+    width: $ww;
+    height: $hh;
+}
