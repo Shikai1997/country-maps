@@ -20,6 +20,7 @@
                 <span class="content__title">callingCodes</span>
                 <span class="content__value"> {{ data.callingCodes[0] }} </span>
             </li>
+            
             <li class="altSpellings">
                 <span class="content__title">altSpellings</span>
                 <ul class="content__value">
