@@ -1,7 +1,7 @@
 <template>
     <nav>
         <div class="nav">
-            <h1>Countries of the World ---</h1>
+            <h1>Countries of the World</h1>
         </div>
     </nav>
 </template>

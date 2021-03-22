@@ -15,6 +15,10 @@ import '@/assets/css/base/reset.css'
 import '@/assets/css/base/base.css'
 import Header from "./components/header"
 import CountryCard from "./components/countryCard"
+
+import { getAllCountries } from './js/api';
+
+
 export default {
   name: 'App',
   components: {
@@ -29,10 +33,10 @@ export default {
   methods:{
     getData(){
       const vm = this
-      vm.axios.get('https://restcountries.eu/rest/v2/all').then((response) => {
-        vm.dataArr = response.data
-        console.log(vm.dataArr)
+      getAllCountries({}).then( res =>{
+        vm.dataArr = res.data
       })
+      
     }
   },
   mounted(){
