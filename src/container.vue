@@ -1,20 +1,13 @@
 <template>
-  <div class="container">
-    <Header></Header>
-    <main class="main">
+  <main class="main">
       <CountryCard v-for="item in dataArr" :key="item.name" :data="item"></CountryCard>
-
-
-    </main>
-  </div>
+  </main>
 </template>
 
 <script>
 
-import '@/assets/css/base/reset.css'
-import '@/assets/css/base/base.css'
+
 import '@/assets/css/pages/main.css'
-import Header from "./components/header"
 import CountryCard from "./components/countryCard"
 import { getAllCountries } from './js/api';
 
@@ -22,7 +15,6 @@ import { getAllCountries } from './js/api';
 export default {
   name: 'App',
   components: {
-    Header,
     CountryCard
   },
   data(){
