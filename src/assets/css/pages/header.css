@@ -6,6 +6,10 @@ nav {
   position: fixed;
   top: 0;
   left: 0; }
+  @media (max-width: 1200px) {
+    nav {
+      box-sizing: border-box;
+      padding: 0 3rem; } }
   nav h1 {
     display: inline-block;
     color: #777;
@@ -17,3 +21,6 @@ nav {
     margin: 0 auto;
     display: flex;
     align-items: center; }
+    @media (max-width: 1200px) {
+      nav .nav {
+        width: 100%; } }

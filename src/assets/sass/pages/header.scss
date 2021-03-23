@@ -7,6 +7,10 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    @media (max-width: 1200px) {
+        box-sizing: border-box;
+        padding: 0 3rem;
+    }
     h1 {
         display: inline-block;
         color: $title-color;
@@ -18,5 +22,9 @@ nav {
         margin: 0 auto;
         display: flex;
         align-items: center;
+
+        @media (max-width: 1200px) {
+            width: 100%;
+        }
     }
 }

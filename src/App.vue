@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="container">
     <Header></Header>
-    <div class="main">
+    <main class="main">
       <CountryCard v-for="item in dataArr" :key="item.name" :data="item"></CountryCard>
 
 
-    </div>
+    </main>
   </div>
 </template>
 
@@ -13,9 +13,9 @@
 
 import '@/assets/css/base/reset.css'
 import '@/assets/css/base/base.css'
+import '@/assets/css/pages/main.css'
 import Header from "./components/header"
 import CountryCard from "./components/countryCard"
-
 import { getAllCountries } from './js/api';
 
 
@@ -44,14 +44,3 @@ export default {
   },
 }
 </script>
-<style>
-  .main{
-
-    width: 120rem;
-    margin: 0 auto;
-    margin-top: 8rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-</style>
