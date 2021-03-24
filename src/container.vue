@@ -25,7 +25,7 @@ export default {
   methods:{
     getData(){
       const vm = this
-      getAllCountries({}).then( res =>{
+      getAllCountries({name: 'test'}).then( res =>{
         vm.dataArr = res.data
       })
       

@@ -1,5 +1,5 @@
 <template>
-    <router-link :to="{ name : 'Test' }" :data1="data" class="card">
+    <router-link :to="'/test/'+data.name" class="card">
         <div class="header">
             <div>
                 <h3 class="name" v-html="countryData.name"></h3>
@@ -29,9 +29,6 @@
             </li>
         </ul>
     </router-link>
-    <!-- <div >
-        
-    </div> -->
 </template>
 
 <script>

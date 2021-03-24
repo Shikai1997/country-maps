@@ -1,13 +1,29 @@
 <template>
     <div>
-        <h1>test!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
+        <h1 style="marginTop: 200px">{{ $route.params.name }}</h1>
     </div>
 </template>
 <script>
+import { getCountry } from '../js/api.js'
 export default {
-    props: ['data1'],
-    created() {
-        console.log(this.data1)
+    data(){
+        return{
+            // loading: false,
+            // post: null,
+            // error: null
+        }
     },
+    created () {
+    this.fetchData()
+    },
+    methods: {
+        fetchData () {
+        // this.error = this.post = null
+        // this.loading = true
+        getCountry( this.$route.params.name,{} ).then( res =>{
+            console.log(res)
+        })
+        }
+    }
 }
 </script>
