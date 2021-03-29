@@ -67,26 +67,20 @@
                 border-bottom: 1px solid #646464;
             }
         }
-        &__title {
-            display: inline-block;
-            width: 40%;
-        }
-        &__value {
-            display: inline-block;
-            width: 50%;
-            text-align: center;
-            @media (max-width: 550px) {
-                width: 70%;
-            }
-        }
-        .altSpellings {
-            li {
-                padding: 0;
-                border: none;
-                margin: 0 auto;
-                display: flex;
-                justify-content: center;
-            }
-        }
+    }
+}
+
+.title {
+    display: inline-block;
+    width: 70%;
+    font-weight: 700;
+}
+
+.value {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    @media (max-width: 550px) {
+        width: 70%;
     }
 }

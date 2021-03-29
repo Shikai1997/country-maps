@@ -9,23 +9,28 @@
         </div>
         <ul :class="$style.content">
             <li>
-                <span :class="$style.content__title">alpha2Code</span>
-                <span :class="$style.content__value" v-html="countryData.alpha2Code"></span>
+                <span :class="$style.title">Country Code (Alpha 2)</span>
+                <span :class="$style.value" v-html="countryData.alpha2Code"></span>
             </li>
             <li>
-                <span :class="$style.content__title">alpha3Code</span>
-                <span :class="$style.content__value" v-html="countryData.alpha3Code"></span>
+                <span :class="$style.title">Country Code (Alpha 3)</span>
+                <span :class="$style.value" v-html="countryData.alpha3Code"></span>
             </li>
             <li>
-                <span :class="$style.content__title">callingCodes</span>
-                <span :class="$style.content__value" v-html="countryData.callingCodes[0] || '--'"></span>
+                <span :class="$style.title">callingCodes</span>
+                <span :class="$style.value" v-html="countryData.callingCodes[0] || '--'"></span>
             </li>
-            
-            <li :class="$style.altSpellings">
-                <span :class="$style.content__title">altSpellings</span>
-                <ul :class="$style.content__value">
-                    <li v-for="item in countryData.altSpellings" :key="item"> &lt; {{ item }} &gt; </li>
-                </ul>
+            <li>
+                <span :class="$style.title">Currency</span>
+                <span :class="$style.value" v-html="countryData.currencies[0].code"></span>
+            </li>
+            <li>
+                <span :class="$style.title">Int. dial code</span>
+                <span :class="$style.value" v-html="countryData.callingCodes[0]"></span>
+            </li>
+            <li>
+                <span :class="$style.title">Region</span>
+                <span :class="$style.value" v-html="countryData.region"></span>
             </li>
         </ul>
     </router-link>

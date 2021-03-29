@@ -13,11 +13,12 @@ const routes = [{
             import ("@/pages/detail.vue"),
         props: true
     },
-    {
-        path: "/:catchAll(.*)",
-        component: () =>
-            import ("@/pages/noFound.vue"),
-    },
+    // {
+    // github pages 會定向為not found 暫時移除
+    // path: "/:catchAll(.*)",
+    // component: () =>
+    //     import ("@/pages/noFound.vue"),
+    // },
 ];
 
 const router = createRouter({
