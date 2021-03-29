@@ -4,7 +4,7 @@
     </div>
 </template>
 <script>
-import { getCountry } from '../js/api.js'
+import { getCountry } from '@/api/index.js'
 export default {
     data(){
         return{

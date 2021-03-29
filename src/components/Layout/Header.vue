@@ -1,14 +1,19 @@
 <template>
     <nav>
-        <div class="nav">
+        <div :class="$style.nav">
             <h1>Countries of the World</h1>
         </div>
     </nav>
 </template>
 
+
+
 <script>
-import '@/assets/css/pages/header.css'
 export default {
     
 }
 </script>
+
+<style lang="scss" module>
+    @import "@/sass/pages/header.module.scss";
+</style>

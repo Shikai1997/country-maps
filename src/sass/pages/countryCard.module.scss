@@ -1,4 +1,4 @@
-@import "../base/variable.scss";
+@import "../base/variable.module.scss";
 .card {
     display: inline-block;
     @include boxSize(23%, 100%);
@@ -8,19 +8,15 @@
     overflow: hidden;
     text-decoration: none;
     color: #000;
-
     @media (max-width: 1200px) {
         width: 30%;
     }
-
     @media (max-width: 768px) {
         width: 47%;
     }
-
     @media (max-width: 550px) {
         width: 100%;
     }
-
     &:hover {
         border: 1px solid rgb(163, 209, 198);
         .header {
@@ -35,12 +31,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         @media (max-width: 900px) {
             flex-direction: column;
             text-align: center;
         }
-
         h3 {
             font-size: $card-title;
             font-weight: 700;
@@ -55,7 +49,6 @@
             background-color: #fff;
             margin-left: 1rem;
             flex-shrink: 0;
-
             @media (max-width: 900px) {
                 order: -1;
                 margin-bottom: 2rem;
@@ -82,7 +75,6 @@
             display: inline-block;
             width: 50%;
             text-align: center;
-
             @media (max-width: 550px) {
                 width: 70%;
             }

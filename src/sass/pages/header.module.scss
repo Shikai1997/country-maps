@@ -1,4 +1,4 @@
-@import "../base/variable.scss";
+@import "../base/variable.module.scss";
 nav {
     height: 6rem;
     width: 100%;
@@ -22,7 +22,6 @@ nav {
         margin: 0 auto;
         display: flex;
         align-items: center;
-
         @media (max-width: 1200px) {
             width: 100%;
         }

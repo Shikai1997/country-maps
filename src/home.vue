@@ -6,12 +6,15 @@
 </template>
 
 <script>
-import '@/assets/css/base/reset.css'
-import '@/assets/css/base/base.css'
-import Header from "./components/header"
+import Header from "@/components/Layout/Header.vue"
 export default {
     components: {
         Header,
     },
 }
 </script>
+
+<style lang="scss" module>
+    @import "@/sass/base/reset.module.scss";
+    @import "@/sass/base/base.module.scss";
+</style>

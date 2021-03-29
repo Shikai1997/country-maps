@@ -1,29 +1,31 @@
 import { createWebHistory, createRouter } from "vue-router";
-import Home from "./container.vue";
-import Test from './pages/test.vue';
-import NotFound from './pages/noFound.vue'
+// import Home from "./container.vue";
+// import Test from './pages/test.vue';
+// import NotFound from './pages/noFound.vue'
 
-const routes = [
-    {
+const routes = [{
         path: "/",
         name: "Home",
-        component: Home,
+        component: () =>
+            import ("@/components/Container.vue"),
     },
     {
         path: "/test/:name",
         name: "Test",
-        component: Test,
+        component: () =>
+            import ("@/pages/test.vue"),
         props: true
     },
     {
         path: "/:catchAll(.*)",
-        component: NotFound,
+        component: () =>
+            import ("@/pages/noFound.vue"),
     },
 ];
 
-    const router = createRouter({
-        history: createWebHistory(),
-        routes,
-    });
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
+});
 
 export default router;

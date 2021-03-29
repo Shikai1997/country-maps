@@ -1,15 +1,13 @@
 <template>
-  <main class="main">
+  <main :class="$style.main">
       <CountryCard v-for="item in dataArr" :key="item.name" :data="item"></CountryCard>
   </main>
 </template>
 
 <script>
 
-
-import '@/assets/css/pages/main.css'
-import CountryCard from "./components/countryCard"
-import { getAllCountries } from './js/api';
+import CountryCard from "@/components/CountryCard.vue"
+import { getAllCountries } from '@/api/index.js';
 
 
 export default {
@@ -36,3 +34,7 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" module>
+  @import "@/sass/pages/main.module.scss";
+</style>
