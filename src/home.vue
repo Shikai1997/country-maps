@@ -1,7 +1,10 @@
 <template>
     <div>
         <Header></Header>
-        <router-view></router-view>
+        <div :class="$style.main">
+            <router-view></router-view>
+        </div>
+        
     </div>
 </template>
 
@@ -17,4 +20,5 @@ export default {
 <style lang="scss" module>
     @import "@/sass/base/reset.module.scss";
     @import "@/sass/base/base.module.scss";
+    @import "@/sass/components/main.module.scss";
 </style>

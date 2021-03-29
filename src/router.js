@@ -1,7 +1,4 @@
 import { createWebHistory, createRouter } from "vue-router";
-// import Home from "./container.vue";
-// import Test from './pages/test.vue';
-// import NotFound from './pages/noFound.vue'
 
 const routes = [{
         path: "/",
@@ -10,10 +7,10 @@ const routes = [{
             import ("@/components/Container.vue"),
     },
     {
-        path: "/test/:name",
-        name: "Test",
+        path: "/detail/:name",
+        name: "detail",
         component: () =>
-            import ("@/pages/test.vue"),
+            import ("@/pages/detail.vue"),
         props: true
     },
     {

@@ -15,5 +15,5 @@ export default {
 </script>
 
 <style lang="scss" module>
-    @import "@/sass/pages/header.module.scss";
+    @import "@/sass/components/ui/header.module.scss";
 </style>

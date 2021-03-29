@@ -1,4 +1,4 @@
-@import "../base/variable.module.scss";
+@import "@/sass/base/variable.module.scss";
 .card {
     display: inline-block;
     @include boxSize(23%, 100%);

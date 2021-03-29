@@ -1,10 +1,7 @@
-.main{
+.main {
     max-width: 120rem;
     margin: 0 auto;
     margin-top: 8rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     @media (max-width: 1200px) {
         max-width: 100%;
         box-sizing: border-box;

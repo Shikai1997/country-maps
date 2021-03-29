@@ -1,5 +1,5 @@
 <template>
-    <router-link :to="'/test/'+data.name" :class="$style.card">
+    <router-link :to="'/detail/'+data.name" :class="$style.card">
         <div :class="$style.header">
             <div>
                 <h3 :class="$style.name" v-html="countryData.name"></h3>
@@ -32,7 +32,6 @@
 </template>
 
 <script>
-// import '@/assets/css/pages/countryCard.css'
 export default {
     props: ['data'],
     data(){
@@ -44,5 +43,5 @@ export default {
 </script>
 
 <style lang="scss" module>
-    @import "@/sass/pages/countryCard.module.scss";
+    @import "@/sass/components/countryCard.module.scss";
 </style>

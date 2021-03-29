@@ -1,5 +1,5 @@
 <template>
-  <main :class="$style.main">
+  <main :class="$style.container">
       <CountryCard v-for="item in dataArr" :key="item.name" :data="item"></CountryCard>
   </main>
 </template>
@@ -8,7 +8,6 @@
 
 import CountryCard from "@/components/CountryCard.vue"
 import { getAllCountries } from '@/api/index.js';
-
 
 export default {
   name: 'App',
@@ -34,7 +33,10 @@ export default {
   },
 }
 </script>
-
 <style lang="scss" module>
-  @import "@/sass/pages/main.module.scss";
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 </style>
