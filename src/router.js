@@ -14,9 +14,9 @@ const routes = [{
         props: true
     },
     {
-        path: "/:catchAll(.*)",
-        component: () =>
-            import ("@/pages/noFound.vue"),
+        // path: "/:catchAll(.*)",
+        // component: () =>
+        //     import ("@/pages/noFound.vue"),
     },
 ];
 
