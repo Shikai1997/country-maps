@@ -12,12 +12,7 @@ const routes = [{
         component: () =>
             import ("@/pages/detail.vue"),
         props: true
-    },
-    {
-        // path: "/:catchAll(.*)",
-        // component: () =>
-        //     import ("@/pages/noFound.vue"),
-    },
+    }
 ];
 
 const router = createRouter({
