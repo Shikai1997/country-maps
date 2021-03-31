@@ -1,0 +1,17 @@
+@import "../base/variable.scss";
+
+.countryDetail{
+    h1{
+        font-size: 3.6rem;
+        margin-bottom: 3rem;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+    }
+    .item{
+        width: 33.33333%;
+        box-sizing: border-box;
+        padding-right: 2rem;
+    }
+}
