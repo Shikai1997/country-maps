@@ -1,7 +1,7 @@
 <template>
     <nav>
         <div :class="$style.nav">
-            <h1>Countries of the World</h1>
+            <h2>Countries of the World</h2>
         </div>
     </nav>
 </template>

@@ -1,8 +1,10 @@
 @import "@/sass/base/variable.module.scss";
 .card {
     display: inline-block;
+    box-sizing: border-box;
     @include boxSize(23%, 100%);
-    margin-bottom: 2rem;
+    margin: 0 1% 2rem;
+    // margin-bottom: 2rem;
     border: 1px solid #646464;
     border-radius: .5rem;
     overflow: hidden;

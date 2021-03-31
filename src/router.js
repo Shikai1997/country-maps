@@ -1,27 +1,25 @@
-import { createWebHistory, createRouter } from "vue-router";
+import { createWebHashHistory, createRouter } from "vue-router";
+//createWebHistory  此模式github無法顯示~
 
 const routes = [
     {
         path: "/",
-        redirect: '/home',
-    },
-    {
-        path: "/home",
-        name: "Home",
+        name: "home",
         component: () =>
-            import ("@/components/Container.vue"),
+            import ("./components/Container.vue"),
     },
     {
         path: "/detail/:name",
         name: "detail",
         component: () =>
-            import ("@/pages/detail.vue"),
+            import ("./pages/detail.vue"),
         props: true
     }
 ];
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
+    // history: createWebHistory(),
     routes,
 });
 

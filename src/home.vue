@@ -2,7 +2,7 @@
     <div>
         <Header></Header>
         <div :class="$style.main">
-            <router-view></router-view>
+            <router-view />
         </div>
         
     </div>
