@@ -22,7 +22,6 @@ export default {
   data(){
     return{
       dataArr: [],
-      searchArr: [],
       keyWord: '',
     }
   },
@@ -36,11 +35,12 @@ export default {
     getKeyWord(val){
       this.keyWord = val
     },
-    search(){
-      // 搜尋之前先清空
-      this.searchArr.length = 0
-      this.searchArr.push(this.dataArr.filter((item)=>{
-        return item.name.indexOf(this.keyWord) > -1
+    search(arr){
+      // 轉成大寫再比較
+      const key = this.keyWord.toUpperCase()
+      arr.push(this.dataArr.filter((item)=>{
+        const itemName = item.name.toUpperCase()
+        return itemName.indexOf(key) > -1
       }))
     }
   },
@@ -52,8 +52,9 @@ export default {
       if(this.keyWord === ''){
         return this.dataArr
       }
-      this.search()
-      return this.searchArr[0]
+      const searchArr = []
+      this.search(searchArr)
+      return searchArr[0]
     }
   },
 }
@@ -61,7 +62,6 @@ export default {
 <style lang="scss" module>
   .container{
     display: flex;
-    // justify-content: space-between;
     flex-wrap: wrap;
   }
 </style>
