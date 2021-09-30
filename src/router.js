@@ -14,6 +14,10 @@ const routes = [
         component: () =>
             import ("./pages/detail.vue"),
         props: true
+    },
+    {
+        path: "/:catchAll(.*)",
+        redirect: 'home'
     }
 ];
 
