@@ -22,7 +22,7 @@
             </li>
             <li>
                 <span :class="$style.title">Currency</span>
-                <span :class="$style.value" v-html="countryData.currencies[0].code"></span>
+                <span :class="$style.value" v-html="countryData.currencies ? countryData.currencies[0].code : '--'"></span>
             </li>
             <li>
                 <span :class="$style.title">Int. dial code</span>
